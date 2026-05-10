@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+nav {
+    background: #555;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: gold;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    min-height: 500px;
+}
+
+.main-content {
+    background: #f4f4f4;
+    padding: 30px;
+}
+
+aside {
+    background: #ddd;
+    padding: 30px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
