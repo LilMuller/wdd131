@@ -16,6 +16,14 @@ header {
     padding: 30px;
 }
 
+#course-title {
+    display: block;
+}
+
+#course-title {
+    display: block;
+}
+
 nav {
     background: #555;
     display: flex;
@@ -38,11 +46,8 @@ main {
     display: grid;
     grid-template-columns: 3fr 1fr;
     min-height: 500px;
-}
-
-.main-content {
-    background: #f4f4f4; 
     padding: 30px;
+    width: 100%;
 }
 
 aside {
