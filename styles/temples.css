@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #222;
+}
+
+header {
+  background-color: #26335d;
+  color: white;
+  padding: 1rem;
+}
+
+.header-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+#menu {
+  display: block;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 0.8rem;
+  right: 1rem;
+}
+
+#menu::before {
+  content: "☰";
+}
+
+#menu.open::before {
+  content: "X";
+}
+
+.navigation {
+  display: none;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.navigation.open {
+  display: flex;
+}
+
+.navigation a {
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.navigation a:hover {
+  background-color: #f2c94c;
+  color: #222;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+  color: #26335d;
+}
+
+.album {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+figure {
+  margin: 0;
+  background-color: white;
+  padding: 0.75rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+figcaption {
+  text-align: center;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+footer {
+  background-color: #26335d;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
