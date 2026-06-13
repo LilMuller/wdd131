@@ -36,9 +36,9 @@ placeholder.selected = true;
 select.appendChild(placeholder);
 
 // dynamic options
-products.forEach(p => {
-  const option = document.createElement("option");
-  option.value = p.name;
-  option.textContent = p.name;
-  select.appendChild(option);
+products.forEach(product => {
+    const option = document.createElement("option");
+    option.value = product.id;
+    option.textContent = product.name;
+    select.appendChild(option);
 });
