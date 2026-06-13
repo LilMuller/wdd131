@@ -1,0 +1,44 @@
+const products = [
+  {
+    id: "fc-1888",
+    name: "flux capacitor",
+    averagerating: 4.5
+  },
+  {
+    id: "fc-2050",
+    name: "power laces",
+    averagerating: 4.7
+  },
+  {
+    id: "fs-1987",
+    name: "time circuits",
+    averagerating: 3.5
+  },
+  {
+    id: "ac-2000",
+    name: "low voltage reactor",
+    averagerating: 3.9
+  },
+  {
+    id: "jj-1969",
+    name: "warp equalizer",
+    averagerating: 5.0
+  }
+];
+
+const select = document.getElementById("product");
+
+// placeholder
+const placeholder = document.createElement("option");
+placeholder.textContent = "Select a Product ...";
+placeholder.disabled = true;
+placeholder.selected = true;
+select.appendChild(placeholder);
+
+// dynamic options
+products.forEach(p => {
+  const option = document.createElement("option");
+  option.value = p.name;
+  option.textContent = p.name;
+  select.appendChild(option);
+});
