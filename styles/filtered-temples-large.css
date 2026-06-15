@@ -9,7 +9,7 @@
     display: none;
   }
 
-  .navigation {
+  nav, .navigation {
     display: flex;
     flex-direction: row;
     margin-top: 0;
