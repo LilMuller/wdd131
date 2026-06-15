@@ -108,9 +108,9 @@ function displayTemples(list) {
       <img src="${temple.imageUrl}" alt="${temple.templeName}">
       <figcaption>
         <h3>${temple.templeName}</h3>
-        <p>${temple.location}</p>
-        <p>${temple.dedicated}</p>
-        <p>${temple.area} sq ft</p>
+        <p>Location: ${temple.location}</p>
+        <p>Dedicated: ${temple.dedicated}</p>
+        <p>Size: ${temple.area} sq ft</p>
       </figcaption>
     `;
 
