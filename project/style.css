@@ -3,6 +3,7 @@ body {
   margin: 0;
   background: #F8FAFC;
   color: #0F172A;
+  line-height: 1.6;
 }
 
 header {
@@ -25,20 +26,90 @@ nav a {
 }
 
 .hero {
-  padding: 40px;
+  padding: 50px 20px;
   text-align: center;
-  background: #e2e8f0;
+  background: linear-gradient(180deg, #dbeafe, #eef2ff);
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.button {
+  display: inline-block;
+  background: #F59E0B;
+  color: #0F172A;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.button-secondary {
+  background: #0F172A;
+  color: white;
 }
 
 main {
   padding: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 section {
   margin-bottom: 20px;
-  padding: 15px;
+  padding: 18px;
   background: white;
   border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.06);
+}
+
+.intro-panel {
+  background: #eff6ff;
+}
+
+.card-grid {
+  display: grid;
+  gap: 15px;
+}
+
+.info-card,
+.lesson-card,
+.faq-item {
+  background: #f8fafc;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+.feature-list {
+  padding-left: 20px;
+}
+
+.feature-list li {
+  margin-bottom: 8px;
+}
+
+.contact-layout {
+  display: grid;
+  gap: 20px;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin-bottom: 6px;
 }
 
 form {
@@ -47,9 +118,11 @@ form {
   gap: 10px;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #cbd5e1;
+  border-radius: 5px;
 }
 
 button {
@@ -57,6 +130,16 @@ button {
   border: none;
   padding: 10px;
   cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.subtle {
+  color: #475569;
+}
+
+#formOutput {
+  font-weight: bold;
 }
 
 footer {
@@ -67,7 +150,16 @@ footer {
 }
 
 @media (min-width: 768px) {
-  .hero {
-    font-size: 1.5rem;
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr 1.2fr;
+    align-items: start;
+  }
+
+  .hero h2 {
+    font-size: 2.5rem;
   }
 }

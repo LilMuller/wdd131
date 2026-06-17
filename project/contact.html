@@ -20,18 +20,46 @@
 </header>
 
 <main>
-  <form id="contactForm">
-    <label>Name:</label>
-    <input type="text" id="name" required>
+  <section class="contact-layout">
+    <div>
+      <h2>Get in touch</h2>
+      <p>Questions about trading education, psychology, or resources? We’re happy to help.</p>
+      <ul class="contact-list">
+        <li><strong>Email:</strong> hello@edgepips.com</li>
+        <li><strong>Support:</strong> responses within 1 business day</li>
+        <li><strong>Office hours:</strong> Monday to Friday, 9am–5pm</li>
+      </ul>
+    </div>
 
-    <label>Email:</label>
-    <input type="email" id="email" required>
+    <form id="contactForm">
+      <label>Name:</label>
+      <input type="text" id="name" required>
 
-    <label>Message:</label>
-    <textarea id="message" required></textarea>
+      <label>Email:</label>
+      <input type="email" id="email" required>
 
-    <button type="submit">Send</button>
-  </form>
+      <label>Message:</label>
+      <textarea id="message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Frequently asked questions</h2>
+    <div class="faq-item">
+      <h3>Do you offer beginner resources?</h3>
+      <p>Yes, our education section covers the basics and helps you build a strong trading routine.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How do you approach risk management?</h3>
+      <p>We emphasize clear position sizing, stop-loss discipline, and reviewing performance after every trade.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can I ask about specific strategies?</h3>
+      <p>Absolutely. Send us a message and we’ll point you toward the most relevant information.</p>
+    </div>
+  </section>
 
   <p id="formOutput"></p>
 </main>
